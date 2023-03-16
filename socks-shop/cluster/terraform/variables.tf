@@ -7,7 +7,7 @@ variable "private_subnet_cidr_blocks" {
 }
 
 variable "public_subnet_cidr_blocks" {
-  default = ["10.0.5.0/24", "10.0.6.0/24", "10.0.5.0/24"]
+  default = ["10.0.5.0/24", "10.0.6.0/24", "10.0.7.0/24"]
 }
 
 variable "cluster_name" {

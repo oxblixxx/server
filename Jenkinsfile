@@ -21,7 +21,7 @@ pipeline {
             steps {
                 script {
                     dir('socks-shop/cluster/kubernetes') {
-                        sh "aws eks update-kubeconfig --name socks-web-shop-eks"
+                        sh "aws eks update-kubeconfig --name socks-shop"
                         sh "kubectl apply -f eks-manifest.yaml"
 //                         sh "kubectl apply -f nginx-service.yaml"
                     }

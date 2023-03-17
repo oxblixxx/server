@@ -39,7 +39,7 @@ resource "aws_iam_role_policy_attachment" "socks-shop-worker-nodes-AmazonEC2Cont
 }
 
 resource "aws_eks_node_group" "socks-shop" {
-  cluster_name    = "socks-shop"
+  cluster_name    = "socks-web-shop-eks"
   node_group_name = "socks-shop"
   node_role_arn   = aws_iam_role.socks-shop-worker-nodes.arn
   subnet_ids      = module.socks-cluster-vpc.private_subnets
